@@ -1,0 +1,37 @@
+objetivos
+predecible 
+reutilizable
+mentenible 
+escalabilidad
+
+Buenas practicas
+establecer reglas -> con el equipo
+explicar la estructura base
+establecer estandares de codificaciones
+evitar largas hojas de estilos
+documentacion
+
+
+-------------------------------------------------
+oocss = css orientado a objetivos
+bem ,separa los bloques elementos y modificadores
+smacss arquitectura css escalable y modular :
+5 pasos 
+compomente base
+layout - elementos que se utilizan una vex header / footes
+modulos . elmenentos que se utlizan mas de una vez
+estado = las acciones del comomentes
+temas 
+
+itcss  triangulo invertido de css
+
+
+compoemntes 
+debemos de ver como si fuera un lego
+
+
+podemos usar para el front-end story book
+sirve para crear compomente visuales de forma aislada
+
+
+juego de flexbox - https://flexboxfroggy.com/#es
