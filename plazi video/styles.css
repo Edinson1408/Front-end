@@ -1,0 +1,200 @@
+   /*guia de https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+   body {
+    margin: 0px;
+    font-family: 'Muli', sans-serif;
+    background-color: #AB88FF;
+}
+
+.header{
+    background-color: #21c08b;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__img { /*usamos bem*/
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.header__menu{ /*bloque elemento  (bloque = header )(elemento menu)*/
+    margin-right: 30px;
+}
+.header__menu ul{
+    display: none;
+    list-style: none; /*qiotamos el punto de la lista*/
+    padding: 0px;
+    position: absolute;
+    width: 100px;
+    text-align:right;
+    margin: 0px 0px 0px -14px;
+    
+}
+.header__menu:hover ul, ul:hover {
+     display: block;
+}
+
+.header__menu li {
+    margin: 10px 0px;
+}
+
+.header__menu li a{
+    color: white;
+    text-decoration: none;
+}
+.header__menu li a:hover {
+    text-decoration: underline;        
+}
+.header__menu--profile{
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__menu--profile img {
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+}
+.header__menu--profile p {
+    margin: 0px;
+    color: white;;
+}
+
+.login{
+    background: linear-gradient(#21c08b,#AB88FF);
+    display: flex;
+    align-items: center; /*ALINIA LOS INTEN CON FLEZ*/
+    justify-content: center; /*ALINE LOS ITENDE HORIZONTA EN MEDIO*/
+    flex-direction: column;/**PONEMOS EN COLUMNAS LOS ITENS*/
+    padding: 0px 30PX;
+    min-height:cal(100vh - 200px); /*no elñ 100 de la vista si no de lo que el usuario*/
+
+}
+
+
+.login__container{
+    background: rgba(255, 255 , 255, 255,0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.login__container--form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.login__container--form label{
+    font-size: 14px;
+}
+
+.login__container--remember-me{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.login__container--remember-me a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;   
+}
+
+.login__container--remember-me a:hover {
+    text-decoration: underline;
+}
+
+.login__container--social-media > div { /*> esto dice que coja todos los div*/
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom:10px ; /*margen abajo*/
+}
+
+.login__container--social-media > div > img{ /*> esto dice que coja todos los div*/
+    width: 30px;
+    margin-left: 10px;
+}
+
+.login__container--register {
+    font-size: 14px;
+}
+
+.login__container--register a {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold; /*para hacer como negrita*/
+    color: white;
+
+}
+
+
+.login__container--register a:hover {
+    text-decoration:underline;
+}
+
+.input{
+    width: 90%;
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+
+::placeholder{ /*pseudo elemento*/
+    color: white;
+}
+.button {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    height: 50px;
+    letter-spacing: 1px; /*espacio entre las letras*/
+    margin: 10px 0px;
+
+}
+
+.footer {
+    background: #AB88FF;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.footer a{
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
